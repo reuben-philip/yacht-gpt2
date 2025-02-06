@@ -1,0 +1,77 @@
+/* Profile Container */
+.profile-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Header */
+.profile-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Profile Pictures Grid */
+.profile-pictures {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Individual Profile Picture */
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Highlight Selected Picture */
+.profile-picture.selected {
+  border: 2px solid #4285f4;
+}
+
+/* Confirm Button */
+.confirm-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #357ae8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-pictures {
+      gap: 10px;
+  }
+
+  .profile-picture {
+      width: 80px;
+      height: 80px;
+  }
+
+  .confirm-button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+  }
+}
+

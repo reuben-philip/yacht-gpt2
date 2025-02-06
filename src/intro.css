@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Bebas";
+    src: url('./fonts/BebasNeue-Regular.ttf'); /* Ensure this path is correct */
+}
+
+/* Global styles */
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Bebas", sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 25px; /* Aligns logo to the top-left corner */
+    width: 210px; /* Scales the logo */
+}
+
+/* Intro Container */
+.intro-container {
+    text-align: center;
+    margin-top: 20vh; /* Vertically centers content */
+}
+
+/* Heading Styling */
+h1 {
+    color: white;
+    font-size: 10vw; /* Dynamic size for responsiveness */
+    margin: 0;
+}
+
+/* Description Styling */
+.description {
+    color: white;
+    font-size: 1.4vw; /* Dynamic size for responsiveness */
+    margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+    background: #ffffff;
+    color: black;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px #c5c5c5, -3px -3px 8px #c5c5c5;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    border-color: #000000;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Footer Styling */
+.author {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1vw; /* Dynamic size for responsiveness */
+    font-family: "Bebas", sans-serif;
+}
